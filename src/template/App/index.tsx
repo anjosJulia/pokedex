@@ -1,5 +1,7 @@
 import { HelloWorld } from './styles.js';
 
-export const App = () => {
+const App = () => {
   return <HelloWorld>Hello World!</HelloWorld>;
 };
+
+export default App;

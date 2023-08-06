@@ -1,21 +1,32 @@
 import { styled } from 'styled-components';
 
 export const NavBar = styled.div`
-  padding: 20px;
+  background-image: url('/src/assets/background-pokemon.jpeg');
   display: flex;
   align-items: center;
-  background-image: url('/src/assets/background-pokemon.jpeg');
-  height: 160px;
-  background-position-y: -260px;
+  flex-direction: column;
+  padding: 40px;
+  background-position-y: -150px;
 
   .title-container {
-    flex: 1;
     display: flex;
     align-items: center;
-    gap: 12px;
+    flex-direction: column;
   }
 
-  .search-box {
-    flex: 2;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    height: 160px;
+    background-position-y: -260px;
+
+    .title-container {
+      flex-direction: row;
+      flex: 1;
+      gap: 12px;
+    }
+
+    .search-box {
+      flex: 2;
+    }
   }
 `;

@@ -1,6 +1,6 @@
 import { styled } from 'styled-components';
 
-export const HelloWorld = styled.h1`
-  color: ${({ theme }) => theme.colors.white};
-  text-align: center;
+export const Pokedex = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 `;
